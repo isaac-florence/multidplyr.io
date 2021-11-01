@@ -1,0 +1,25 @@
+Package: multidplyrio
+Title: Extend Multidplyr with I/O functions
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Isaac",
+           family = "Florence",
+           role = c("aut", "cre"),
+           email = "isaac.florence@outlook.com",
+           comment = c(ORCID = "0000-0001-8260-1237"))
+Description: Provide additional I/O functions for use with the {multidplyr} package, 
+  to aid reading data into workers quickly.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+  multidplyr,
+  cpp11,
+  cli,
+  rlang,
+  readr (>= 2.0.0),
+  vroom,
+LinkingTo: cpp11
+SystemRequirements: C++11
