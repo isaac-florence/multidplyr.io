@@ -29,8 +29,7 @@ read_delim_distrib <- function(cluster,
                                filename,
                                delim = ",",
                                col_types = NULL,
-                               show_col_types = TRUE
-) {
+                               show_col_types = TRUE) {
 
   # prep filepath and check exists
   filename <- normalizePath(filename)
@@ -57,7 +56,7 @@ read_delim_distrib <- function(cluster,
   )
   col_types <- readr::spec(sample)
 
-  if(show_col_types){
+  if (show_col_types) {
     v_summary_col_spec <- utils::getFromNamespace("summary.col_spec", "vroom")
     v_summary_col_spec(col_types)
   }
