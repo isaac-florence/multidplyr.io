@@ -21,5 +21,6 @@ Imports:
   rlang,
   readr (>= 2.0.0),
   vroom,
+  DBI
 LinkingTo: cpp11
 SystemRequirements: C++11
